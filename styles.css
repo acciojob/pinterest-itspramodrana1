@@ -1,1 +1,13 @@
 /*  your css code here. If applicable */
+.holder {
+    display: flex;           /* Enables flexbox */
+    flex-direction: row;     /* Items in a row */
+    flex-wrap: wrap;        /* Items wrap to next row */
+    justify-content: space-between; /* Space between, first/last touch edges */
+    width: 100%;            /* Full width container */
+}
+
+.item {
+    width: 100px;           /* Fixed width prevents squashing */
+    height: 100px;
+}
