@@ -1,13 +1,26 @@
-/*  your css code here. If applicable */
-.holder {
-    display: flex;           /* Enables flexbox */
-    flex-direction: row;     /* Items in a row */
-    flex-wrap: wrap;        /* Items wrap to next row */
-    justify-content: space-between; /* Space between, first/last touch edges */
-    width: 100%;            /* Full width container */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
 }
 
-.item {
-    width: 100px;           /* Fixed width prevents squashing */
-    height: 100px;
+/* 🔥 APPLY DIRECTLY TO img (not .hero img) */
+img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;   /* THIS WAS FAILING */
+}
+
+.content {
+    max-width: 400px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #e60023;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
 }
